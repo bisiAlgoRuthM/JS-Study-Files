@@ -31,3 +31,35 @@ if(hungerLevel > 7){
 }else{
   console.log('We can eat later!')
 }
+
+let isLocked = false;
+
+isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
+
+let isCorrect = true;
+
+
+isCorrect ? console.log('Correct!') : console.log('Incorrect!');
+
+let favoritePhrase = 'Love That!';
+
+
+favoritePhrase === 'Love That!' ? console.log('I love that!') : console.log("I don't love that!");
+
+
+let groceryItem = 'papaya';
+ 
+switch (groceryItem) {
+  case 'tomato':
+    console.log('Tomatoes are $0.49');
+    break;
+  case 'lime':
+    console.log('Limes are $1.49');
+    break;
+  case 'papaya':
+    console.log('Papayas are $1.29');
+    break;
+  default:
+    console.log('Invalid item');
+    break;
+}
