@@ -96,3 +96,41 @@ const tipCalculator = (quality, total) => {
 
 console.log(tipCalculator("good", 100)); //should return 20
 
+// Write your code below
+
+let bobsFollowers = ['jake', 'luke', 'pete', 'jude']
+
+let tinasFollowers = ['jude', 'joseph', 'pete']
+
+let mutualFollowers = []
+for(let i = 0; i < bobsFollowers.length; i++){
+  for(let j = 0; j < tinasFollowers.length; j++){
+    if(bobsFollowers[i] === tinasFollowers[j]){
+      mutualFollowers.push(bobsFollowers[i])
+    }
+  }
+}
+let input = 'cheasteu'
+let vowels = ["a", "e", "i", "o", "u"]
+let resultArray = []
+
+for(let i = 0; i < input.length; i++){
+  //console.log(i)
+  for(let j = 0; j < vowels.length; j++){
+    //console.log(j)
+    if(input[i] === vowels[j]){
+      //console.log(input[i])
+  if(input[i] === 'e'){
+    let doubled = input[i] + input[i]
+    resultArray.push(doubled)
+  }
+  if(input[i] === 'u'){
+    let doubled = input[i] + input[i]
+    resultArray.push(doubled)
+  }
+    }
+  }
+  
+}
+let resultString = (resultArray.join('')).toUpperCase()//'' concantenates with no seperator
+console.log(resultString)
