@@ -1,0 +1,2 @@
+JShint- jshint app.js to detail issues
+module.export.functionName = functionName

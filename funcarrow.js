@@ -134,3 +134,81 @@ for(let i = 0; i < input.length; i++){
 }
 let resultString = (resultArray.join('')).toUpperCase()//'' concantenates with no seperator
 console.log(resultString)
+
+const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
+  for(let i = 1; i <= 1000000; i++) {
+    if ( (2 + 2) != 4) {
+      console.log('Something has gone very wrong :( ');
+    }
+  }
+};
+
+// Write your code below
+const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes
+isTwoPlusTwo()
+console.log(isTwoPlusTwo.name)
+
+
+const addTwo = num => {
+  return num + 2;
+}
+
+const checkConsistentOutput = (func, val) => {
+  var checkA = val + 2 
+  var checkB = func(val)
+
+  if(checkA == checkB){
+    return checkB
+  }else{
+    console.log('inconsistent results')
+  }
+}
+
+console.log(checkConsistentOutput(addTwo, 8))
+
+console.log();
+const addTwo = num => {
+  return num + 2;
+}
+
+const checkConsistentOutput = (func, val) => {
+  var checkA = val + 2 
+  var checkB = func(val)
+
+  if(checkA == checkB){
+    return checkB
+  }else{
+    console.log('inconsistent results')
+  }
+}
+
+console.log(checkConsistentOutput(addTwo, 8))
+
+console.log();
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+// Iterate over fruits below
+fruits.forEach(fruit => console.log(`I want to eat a ${fruit}`))
+
+const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+
+// Create the secretMessage array below
+const secretMessage = animals.map(animal =>{
+  return animal[0]
+} ) 
+
+console.log(secretMessage.join(''));
+
+const bigNumbers = [100, 200, 300, 400, 500];
+const smallNumbers = bigNumbers.map(number =>{
+  return number/100
+})
+
+const newNumbers = [1, 3, 5, 7];
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  console.log(`The vaue of accumulator: ${accumulator}`)
+  console.log(`The value of currentValue: ${currentValue}`)
+  return accumulator + currentValue
+}, 10)
+
+console.log(newSum)
