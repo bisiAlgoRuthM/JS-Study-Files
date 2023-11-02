@@ -30,3 +30,24 @@ for(let crewMember in spaceship.crew){
 for(let crewMember in spaceship.crew){
   console.log(`${spaceship.crew[crewMember].name} : ${spaceship.crew[crewMember].degree}`)
 }
+
+const vampire = {
+    name: 'Dracula',
+    residence: 'Transylvania',
+    preferences: {
+      day: 'stay inside',
+      night: 'satisfy appetite'
+    }
+  };
+
+  //const residence = vampire.residence
+  //console.log(residence)  //Prints 'Transylvania'
+
+  const { residence } = vampire
+  //console.log(residence);  prints 'Transylvania'
+
+  const { day } = vampire.preferences
+  console.log(day) //prints 'stay inside'
+
+  const { night } = vampire.preferences
+  console.log(night) //prints 'satisfy appetite'

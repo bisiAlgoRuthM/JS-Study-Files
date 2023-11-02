@@ -1,7 +1,7 @@
 /*function sayHello(name){
     console.log('Hello there!' + ' ' + name);
 }
-var message = '';
+ var message = '';
  sayHello('Jessie')
 console.log(window);*/
 
